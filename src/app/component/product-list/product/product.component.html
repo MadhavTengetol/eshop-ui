@@ -1,0 +1,25 @@
+<div class="container ">
+  <div class="card  text-light border-0 responsive "
+    style="width: 15rem; background-color: #71a7d0; height :min-content; float: left;align-content: space-between; border-radius: 10px; margin: 10px;"
+    >
+
+    <img
+      src='{{productItem.imageUrl}}'
+      class="card-img-top responsive" style="height: 180px; padding:5px; border-radius: 10px;" alt="Image Url">
+    <div class="card-body">
+      <h5 class="card-title">{{productItem.productName | slice: 0:15}}</h5>
+      <p class="card-desc">{{productItem.category | slice: 0:30}} </p>
+      <span> <strong> {{productItem.unitPrice | currency :'INR'}} </strong></span>
+
+
+        <!-- <input type="number" name="quantity"  value='1' max="10" [(ngModel)]='productquantity' style="width:40px;float: right;" > -->
+
+      <!-- <span *ngIf="productItem.available_qty > 0" style="float: right;">Available</span>
+      <span *ngIf="productItem.available_qty === 0" style="float: right;">Not Available</span> -->
+      <br>
+      <br>
+      <a class="btn btn-success"   style="float: right;">Add
+        To Cart</a>
+    </div>
+  </div>
+</div>
